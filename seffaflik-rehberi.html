@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Şeffaflık Rehberi</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f7fb;
+    margin: 0;
+    padding: 0 10px;
+  }
+  .header {
+    text-align: center;
+    background-color: #004c91;
+    color: white;
+    padding: 20px 10px;
+  }
+  .section {
+    background: white;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .section h2 {
+    font-size: 18px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .section p {
+    display: none;
+    margin-top: 10px;
+  }
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>ŞEFFAFLIK NEDİR, NEDEN ÖNEMLİDİR?</h1>
+    <p>Yerelden Ülkeye Adaletli ve Güvenli Bir Sistem İçin Yurttaş Rehberi</p>
+  </div>
+
+  <div class="section" onclick="toggleText(this)">
+    <h2>1. Şeffaflık Nedir?</h2>
+    <p>Şeffaflık; belediyelerin, odaların, kooperatiflerin ve partilerin ne karar aldığını, kime ne verdiğini, neye ne harcadığını halkla açıkça paylaşmasıdır.</p>
+  </div>
+
+  <div class="section" onclick="toggleText(this)">
+    <h2>2. Neden Önemlidir?</h2>
+    <p>Torpili ve kayırmacılığı önler, yolsuzlukları ortaya çıkarır, adaleti ve güveni artırır, hesap sorulabilirlik sağlar.</p>
+  </div>
+
+  <div class="section" onclick="toggleText(this)">
+    <h2>3. Nerede Şeffaflık Olmalı?</h2>
+    <p>Belediyeler, esnaf odaları, kredi kooperatifleri, siyasi partiler ve kamu destekli STK'lar şeffaf olmak zorundadır.</p>
+  </div>
+
+  <div class="section" onclick="toggleText(this)">
+    <h2>4. Ne Yapabilirsin?</h2>
+    <p>4982 sayılı yasaya göre bilgi talep et, toplantılara katıl, dilekçe ver, sosyal medyada görünürlük yarat, birlikte hareket et.</p>
+  </div>
+
+  <div class="section" onclick="toggleText(this)">
+    <h2>5. Unutma!</h2>
+    <p>Şeffaflık bir lütuf değil, temel yurttaş hakkıdır. Sormazsan unuturlar. Takip edersen değişir.</p>
+  </div>
+
+<script>
+  function toggleText(section) {
+    const p = section.querySelector("p");
+    p.style.display = p.style.display === "block" ? "none" : "block";
+  }
+</script>
+
+</body>
+</html>
