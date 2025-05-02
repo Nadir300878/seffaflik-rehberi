@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Şeffaflık Rehberi</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f7fb;
+    margin: 0;
+    padding: 0 10px;
+  }
+  .header {
+    text-align: center;
+    background-color: #004c91;
+    color: white;
+    padding: 20px 10px;
+  }
+  .section {
+    background: white;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .section h2 {
+    font-size: 18px;
+    margin: 0;
+  }
+  .section p {
+    display: none;
+    margin-top: 10px;
+  }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>ŞEFFAFLIK NEDİR, NEDEN ÖNEMLİDİR?</h1>
+    <p>Yerelden Ülkeye Adaletli ve Güvenli Bir Sistem İçin Yurttaş Rehberi</p>
+  </div>
+
+  <div class="section" onclick="toggleText(this)">
+    <h2>1. Şeffaflık Nedir?</h2>
+    <p>Şeffaflık, bir kurumun ya da yöneticinin kendisini saklamadan halka hesap verebilir olmasıdır. Bu, “bize güvenin” demek değil; göstererek, belgeyle, açık şekilde ne yaptığını anlatmaktır. Karar süreçlerinin, harcamaların, atamaların, desteklerin ve ihalelerin halkın denetimine açık hale getirilmesidir. Kamu gücü kullanan herkes, halkın parasını yöneten herkes şeffaf olmak zorundadır. Çünkü o kaynaklar halkındır, kimsenin kişisel mülkü değildir. Şeffaflık, adaletin ön şartıdır.</p>
+  </div>
+
+  <div class="section" onclick="toggleText(this)">
+    <h2>2. Neden Önemlidir?</h2>
+    <p>Şeffaf olmayan yerde torpil yaygındır, ihale yandaşadır, hesap sorulamaz ve güvensizlik büyür. Şeffaf olan yerde ise herkes eşit fırsata sahiptir, hesap sorulur, kurumlara güven artar, yöneticiler daha dikkatli davranır. Türkiye’de aynı kişilerin hep aynı koltuklarda oturmasının, belediyelere ve odalara güvenin düşük olmasının, yolsuzluk söylentilerinin eksik olmamasının temel nedeni şeffaflık eksikliğidir. Şeffaflık olmadan ne demokrasi işler ne liyakat. Sadece koltuklar korunur, halk dışarıda bırakılır.</p>
+  </div>
+
+  <div class="section" onclick="toggleText(this)">
+    <h2>3. Nerede Şeffaflık Olmalı?</h2>
+    <p>Belediyeler: Vergimizle çalışırlar. İmar kararları, harcamalar, personel alımı bizi doğrudan etkiler.<br>
+Esnaf ve Sanatkâr Odaları: Aidat alırlar, kredi yönlendirmesi yaparlar, üyeler üzerinde ciddi etkiye sahiptirler.<br>
+Kredi ve Kefalet Kooperatifleri: Devlet destekli kredi dağıtırlar. Kim, neden, hangi şartla kredi alıyor? Şeffaflık şart.<br>
+Siyasi Partiler: Adayları belirler, kamuoyunu şekillendirirler. Şeffaf olmazlarsa halkın temsilcisi olamazlar.<br>
+STK’lar ve Dernekler: Kamudan fon alan ya da toplum adına hareket eden her yapı açık olmalı. Kamuya hizmet ediyorsan, kamuya açık olacaksın.</p>
+  </div>
+
+  <div class="section" onclick="toggleText(this)">
+    <h2>4. Ne Yapabilirsin?</h2>
+    <p>Bilgi Edinme Hakkını Kullan (4982 Sayılı Kanun): Devlet dairelerinden, belediyelerden ve bazı STK’lardan bilgi istemek yasal hakkındır.<br>
+Belediye Meclis Toplantılarına Katıl: Halka açık oturumlarda fikir belirtebilir, takip edebilirsin.<br>
+Genel Kurullara Katıl: Oda, kooperatif ve derneklerin seçimlerine git, oy ver, gerekirse aday ol.<br>
+Sosyal Medyada Soru Sor: Gördüğün bir adaletsizliği ya da kapalı süreci duyur.<br>
+Birlik Ol: Dayanışma, en güçlü denetim mekanizmasıdır. Bireysel değil, kolektif hareketle değişim sağlanır.</p>
+  </div>
+
+  <div class="section" onclick="toggleText(this)">
+    <h2>5. Unutma!</h2>
+    <p>Şeffaflık, yönetenin lütfu değil, yönetilenin hakkıdır. Şeffaflık varsa güç kötüye kullanılmaz, liyakat ve güven oluşur. Şeffaflık yoksa yöneten hep aynı kalır, koltuklar kişiselleşir. Sormazsan unuturlar, izlemezsen saklarlar, ısrar edersen açılırlar.</p>
+  </div>
+
+<script>
+  function toggleText(section) {
+    const p = section.querySelector("p");
+    p.style.display = p.style.display === "block" ? "none" : "block";
+  }
+</script>
+
+</body>
+</html>
